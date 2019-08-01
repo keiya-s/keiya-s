@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Samuel Goldenberg Official Website</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Samuel Goldenbergの公式ウェブサイト">
+    <link rel="stylesheet" href="css/styles.css">
+   </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <ul class="menu">
+          <a href="index.html">
+            <!-- ↓currentと名付け、今いるページ(HOME)の文字に下線をCSSで設定 -->
+           <li class="current">HOME</li></a>
+          <a href="about.html">
+            <li>PROFILE</li></a>
+          <a href="information.html">
+            <li>INFORMATION</li></a>
+          <a href="discography.html">
+            <li>DISCOGRAPHY</li></a>
+          <a href="biography.html">
+            <li>BIOGRAPHY</li></a>
+          <a href="link.html">
+            <li>LINK</li></a>
+        </ul>
+      </nav>
+      </header>
+
+      <!-- リストタグにはol,ul,dl等がある -->
+
+
+
+      <!-- 自己紹介 -->
+    <section>
+     <section class="aboutsamuel">
+       <img src="img/IMG_0871-3.jpg" width="340px" height="260px" alt="samuel_goldenbergアイコン" class="icon">
+       <h1> Samuel Goldenberg</h1>
+       <p>東京・高田馬場発3ピースロックバンド。</p>
+       <p>UKロック✖️ブルース✖️Jロック✖️グランジ・・・</p>
+       <p>オールドなサウンドを新しく昇華。</p>
+       <p>新しい「踊れるロック」を。</p>
+
+       <!-- <p><a href="https://www.instagram.com/samuel_goldenberg/?hl=ja" target="_blank">instagram<a/></p> -->
+     </section>
+
+     <!-- ↓次のhに行くが、見出しが必要ない場合。罫線一本になる。
+     <hr></hr> -->
+
+     <!-- 作品紹介 -->
+     <!-- divで要素をまとめて、CSSでレイアウトを整える -->
+       <div class="profile">
+         <section class="member">
+           <img src="img/IMG_1020.jpg" width="400px" height="260px" alt="arim">
+           <!-- <h1><span style="color:red;">勇</span>者ゲーム</h1> -->
+           <div class="desc">
+             <h1>ARIM</h1>
+             <p>・VOCAL/GUITAR
+               <!-- ↓brで改行 -->
+               <!-- <br> -->
+               <!-- 楽しいゲームです。 -->
+               <!-- ↓strongで囲むと太文字になる -->
+               <!-- <strong>楽しいゲームです。</strong> -->
+               <!-- 楽しいゲームです。楽しいゲームです。 -->
+             </p>
+             <!-- <blockquote>で囲むと引用になる -->
+           </div>
+         </section>
+         <section class="member">
+           <img src="img/IMG_1036.jpg" width="400px" height="260px" alt="mihashi">
+           <div class="desc">
+             <h1>MIHASHI</h1>
+             <p>・GUITAR</p>
+           </div>
+         </section>
+         <section class="member">
+           <img src="img/IMG_1051.jpg" width="400px" height="260px" alt="keiya">
+           <div class="desc">
+             <h1>KEIYA</h1>
+             <p>・BASS</p>
+           </div>
+         </section>
+       </section>
+     </div>
+
+
+       <!-- pre使うとコードの見た目通り表示される。改行等でbrなしでOK -->
+       <!-- <section>
+         <pre>
+Arimu
+Mihashi
+Keiya
+         </pre>
+       </section> -->
+
+       <!-- セクショニング練習 -->
+       <!-- <section>
+         <h1>NEWS</h1>
+         <article>
+           <h1>お知らせ</h1>
+           <p>お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。</p>
+           <footer>
+             <p>投稿：<time>2019-1-1</time></p>
+           </footer>
+         </article>
+       </section>
+       <section>
+         <h1>NEWS</h1>
+         <article>
+           <h1>お知らせ</h1>
+           <p>お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。お知らせ。</p>
+           <footer>
+             <p>投稿：<time>2019-1-1</time></p>
+           </footer>
+         </article>
+       </section>
+
+       <aside>
+         <h1>ADV</h1>
+         <p>広告。広告。広告。広告。広告。広告。広告。広告。広告。広告。広告。広告。広告。広告。広告。広告。</p>
+       </aside> -->
+
+       <section class="discography">
+         <div class="singles">
+            <h1>DISCOGRAPHY</h1>
+            <div class="flex">
+              <section class="single">
+                <img src="img/Swing.jpg" width="120px" height="120px"alt="swing">
+                <h1>"Swing"</h1>
+                <p>1st single。<br>古き良きロックンロールをイメージさせる踊れるロック。</p>
+              </section>
+              <section class="single">
+                <img src="img/Around the World.jpg" width="120px" height="120px"alt="around the world">
+                <h1>"Around the World"</h1>
+                <p>2st single。<br>疾走感のあるサイケデリックなロックサウンド。</p>
+              </section>
+              <section class="single">
+                <img src="img/金木犀.jpg" width="120px" height="120px"alt="金木犀">
+                <h1>"金木犀"</h1>
+                <p>3st single。<br>叙情的な歌詞とギターサウンドが特徴の一曲。</p>
+              </section>
+            </div>
+         </div>
+       </section>
+
+       <!-- table練習 -->
+     <div class="biography">
+       <table>
+         <h1>BIOGRAPHY</h1>
+         <thead>
+           <tr>
+             <th>年</th>
+             <th>出来事</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>2017</td><td>SamnuelGoldenberg結成</td>
+           </tr>
+           <tr>
+             <td>2018</td><td>1st Single "Swing" リリース</td>
+           </tr>
+         </tbody>
+       </table>
+     </div>
+
+       <!-- お問い合わせフォーム練習 入力部品 -->
+       <!-- <form>
+         <label>氏名<input></label>
+       </form> -->
+      <div class="form">
+       <form>
+         <h1>お問い合わせ</h1>
+         <p>
+         <label for="name">氏名</label>
+         <!-- <input type="text" id="name" value="氏名"> -->
+         <input type="text" id="name" placeholder="氏名を入力">
+   </p>
+
+       <p>
+         <label for="message">メッセージ</label>
+   <textarea id="message" placeholder="140文字以内"></textarea>
+       </p>
+
+       <p>
+         <label for=""song>楽曲</label>
+         <select id="song" size="3" multiple>
+           <option>Swing</option>
+           <option selected>Around the World</option>
+           <option>金木犀</option>
+           <option>Machine Gun</option>
+           <option>ブタゴリラ</option>
+         </select>
+       </p>
+
+
+         <!-- <fieldset>
+           <legend>お使いのスマホ(複数選択可)</legend>
+           <input type="checkbox" id="iPhone" checked><label for="iPhone">iPhone</label>
+           <input type="checkbox" id="android"><label for="android">Android</label>
+           <input type="checkbox" id="other"><label for="other">その他</label>
+         </fieldset> -->
+        <div class="phone">
+          <p>
+          <fieldset>
+            <legend>お使いのスマホ(1つのみ)</legend>
+            <input type="radio" name="phone" id="iPhone" checked><label for="iPhone">iPhone</label>
+            <input type="radio" name="phone" id="android"><label for="android">Android</label>
+            <input type="radio" name="phone" id="other"><label for="other">その他</label>
+          </fieldset>
+        </p>
+        </div>
+
+         <p>
+           <label for="psw">パスワード</label>
+           <input type="password" id="psw">
+         </p>
+         <button>送信</button>
+         <!-- <input type="submit"  value="送信"> -->
+       </p>
+       </form>
+     </div>
+
+  <!-- footer -->
+    <footer>
+      <ul>
+        <a href="mailto:samuel.gbgbgb@gmail.com" target="_blank">
+          <li><img src="img/mail.png" width="20px" height="20px" alt="メール送信"></li></a>
+        <a href="https://www.instagram.com/samuel_goldenberg/?hl=ja" target="_blank">
+          <li><img src="img/blog.png" width="20px" height="20px" alt="ブログサイトへ"></li></a>
+        <a href="https://www.instagram.com/samuel_goldenberg/?hl=ja" target="_blank">
+          <li><img src="img/photos.png" width="20px" height="20px" alt="写真サイトへ"></li></a>
+      </ul>
+      <p>&copy Samuel Goldenberg</p>
+      <!-- ↓ページのTOPに戻る -->
+      <p><a href="#" class="btn">TOPへ</a></p>
+
+    </footer>
+
+    </body>
+  </html>
+
+
+<!-- ページ内リンクは、リンク先にid属性="好きな名前"をつけて、リンク元にその名前でhref="#好きな名前" -->
