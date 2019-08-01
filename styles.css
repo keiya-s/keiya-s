@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+body{
+  /* color:red;
+  color:rgb(0,0,255);
+  color:#0000ff;
+  color:#0f0; */
+  color:#333;
+  font-family: Verdana,'Arial Black',メイリオ, sans-serif;
+  margin:0px;
+  background-color:#fff;
+}
+
+header{
+  background-color: black;
+  /* ↓text-alignで文の並び位置を設定 */
+  text-align:left;
+  padding:10px;
+  /* background-image: url(../img/IMG_0890.jpg); */
+  height: 900px;
+  /* ↓background-sizeで画像をスケールに合わせる */
+  /* background-size: cover; */
+  /* ↓画像の中心を設定 */
+  /* background-position: 50% 50%; */
+  /* background-position: center; */
+  /* バックグラウンドのプロパティを一括指定 */
+  background: center/cover black url(../img/IMG_0890.jpg);
+  margin-bottom: 60px;
+}
+
+/* ↓属性一致。属性の一部分を検索してスタイリングできる。 */
+/* ①前方一致、属性の頭の文字
+a[href^="https"]{
+  font-weight: bold;
+} */
+/* ②後方一致、属性の後ろの文字
+a[href$="ja"]{
+  font-weight: bold;
+} */
+/* ③全一致、特定の属性1つをスタイリング
+a[href="https://www.instagram.com/samuel_goldenberg/?hl=ja"]{
+  font-weight: bold;
+} */
+
+
+
+header ul{
+  /* ↓箇条書きの点をなくす */
+  list-style-type: none;
+  /* ↓positionの使い方。 */
+  /* position: fixed; */
+  /* position: relative; */
+  /* position: absolute; */
+  margin: 0;
+  padding-left: 0;
+  background-color: black;
+    }
+
+.menu{
+position: fixed;
+z-index: 2;
+left: 50%;
+margin-left: -367.367px;
+}
+
+header li{
+  /* ↓並び方を設定 */
+ display: inline-block;
+  padding:4px 8px;
+  font-size: 20px;
+  /* background-color: skyblue; */
+}
+
+/* ↓>は子要素をセレクトしている */
+/* inheritはbodyの設定を受け継ぐ */
+/* text-decorationをnoneにしてアンダーラインを消す */
+header ul > a{
+  text-decoration: none;
+  color:white;
+  transition: all 0.5s;
+}
+
+/* hoverはマウスポインタを乗せた時の意味 */
+header ul > a:hover {
+  color:royalblue;
+  cursor: pointer;
+}
+
+.current{
+  border-bottom: 4px solid royalblue;
+}
+
+section{
+  text-align: center;
+}
+
+section h1{
+  /* font-weightで字の太さを設定 */
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+section p {
+  margin-top:0px;
+  font-size:14px;
+}
+
+.aboutsamuel{
+  width:800px;
+  margin: 0 auto 40px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+}
+
+.aboutsamuel h1{
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom:  20px;
+}
+
+/* ↓f擬似要素。htmlコードを汚すことなく、直前と直後に要素を追加できる */
+/* .aboutsamuel h1::before{
+  content: '- ';
+} */
+
+.aboutsamuel h1::after{
+  content: '- サミュエル・ゴールデンベルグ -';
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  color: #aaa;
+  padding-top: 5px;
+}
+
+
+/* 擬似クラス、何番目かを指定してスタイリング */
+/* 何番目かを指定 */
+/* .aboutsamuel > p:nth-of-type(3){
+  background-color: pink;
+} */
+/* 特定の数字の倍数 */
+/* .aboutsamuel > p:nth-child(2n){
+  background-color: pink;
+} */
+/* ↓奇数番目 */
+/* .aboutsamuel p:nth-of-type(odd){
+  background-color: pink;
+} */
+/* ↓偶数番目 */
+/* .aboutsamuel  p:nth-of-type(even){
+  background-color: skyblue;;
+} */
+/* ↓最初と最後 */
+/* .aboutsamuel > p:first-child{
+background-color:pink;
+} */
+/* .aboutsamuel > p:last-child{
+background-color: skyblue;
+} */
+/* ↓特定の番目以外を指定 */
+/* .aboutsamuel > p:not(:last-child){
+  border-bottom: 1px dashed silver;
+} */
+/* ↓nth-typeだけだと、p以外も含んでカウントしてしまう。pのみで順番を数える時↓ */
+/* .aboutsamuel > p:nth-of-type(3){
+  background-color: pink;
+} */
+
+
+.icon{
+  /* border:は境界線のこと。 */
+  /* ↓画像の角を丸くする。画像の半径のpxにすれば綺麗な円になる。%で表示もできる。 */
+  border-radius: 50%;
+  /* ↓border-width,style,colorをまとめて設定できる */
+  border:5px solid white;
+  /* ↓box-shadowで影をつける。x軸方向のズレ、y軸方向のズレ、blurでぼかし具合、影の拡大、colorを設定。text-shadowもあるが、影の拡大はなし。 */
+  box-shadow: 0px 0px 5px 10px gray;
+}
+
+.profile{
+  /* ↓worksというclassのdivのレイアウト。幅を400pxにして画像と文章整える。 */
+  width:800px;
+  /* margin-left: auto;・・・autoで指定した側に余白を持って行ってくれる
+  margin-right: auto;・・・左右autoにすると均等に配分、つまり中央揃いになる */
+  margin:0 auto;
+  /* ↓footerとの間に境界線を設定 */
+  border-bottom: 1px solid gray;
+  line-height: 20px;
+  /* margin-top: 40px; */
+  /* background-color: pink; */
+}
+
+
+/* ↓section間にマージンが欲しい */
+.member{
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.desc{
+  width:360px;
+}
+
+.member:nth-of-type(odd) .desc{
+  float: left;
+  padding-left: 40px;
+}
+
+.member:nth-of-type(even) .desc{
+  float: right;
+  padding-left: 40px;
+}
+
+.member h1{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.profile h1,
+.profile p{
+  text-align: left;
+}
+
+.discography{
+  /* background-color: lightgray; */
+}
+
+.singles{
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid  gray;
+  text-align:left;
+}
+
+.singles h1{
+  font-size: 30px;
+  font-weight:bold;
+  padding-bottom: 70px;
+}
+
+.singles .flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.single{
+  text-align: left;
+  width: 250px;
+  background-color: rgba(211,211,211,0.5);
+  position: relative;
+  box-sizing: border-box;
+  padding:60px 30px 20px;
+  }
+
+  .single img{
+    border-radius: 50%;
+    border:5px solid white;
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0;
+    right:0;
+    top:-70px;
+  }
+
+
+.single h1{
+  font-size: 17px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.biography{
+  width:800px;
+  /* height: 20px;
+  overflow: scroll; */
+  margin:auto;
+  border-bottom:1px solid gray;
+  padding-bottom:40px;
+}
+
+.form{
+  width:800px;
+  margin:auto;
+  border-bottom:1px solid gray;
+  padding-bottom:40px;
+}
+
+.phone{
+  width:400px;
+}
+
+
+footer{
+  width:800px;
+  /* ↓3つ並べると上、左右、下の順番になる。 */
+  margin:0px auto 60px;
+  /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+footer ul{
+  margin:0px;
+  list-style-type: none;
+  padding-left: 0px;
+  float: left;
+}
+
+footer li{
+ display: inline-block;
+}
+
+/* hoverはマウスポインタを乗せた時の意味 */
+footer ul > a:hover {
+  /* ↓opacity:で透明度を設定。0.0から1.0で設定する。 */
+  opacity: 0.6;
+}
+
+footer p{
+   color:lightgray;
+   font-size: 14px;
+   text-align: right;
+}
+
+.about{
+  width: 400px;
+  margin: 0px auto 60px;
+}
+
+.about p{
+  text-align: left;
+}
+
+.btn{
+  color:#333;
+  background-color:lightgray;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 20%;
+}
+
+.btn:hover {
+  color:royalblue;
+}
+
+.
